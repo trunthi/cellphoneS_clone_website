@@ -1,0 +1,829 @@
+    .totheTop {
+        opacity: 1;
+        align-items: center;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background: rgba(215, 0, 24, .7);
+        border: 0;
+        border-radius: 10px;
+        bottom: 110px;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        height: 45px;
+        justify-content: center;
+        opacity: 0;
+        padding: 2px;
+        position: fixed;
+        right: calc(50% - 600px);
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        width: 45px;
+        z-index: 1000;
+    }
+    @keyframes pulse-blue {
+        0% {
+            box-shadow: 0 0 0 0 rgba(2,143,227,.7);
+            transform: scale(.95);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(2,143,227,0);
+            transform: scale(1);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(2,143,227,0);
+            transform: scale(.95);
+        }
+    }
+    .zalo_img {
+        height: 45px;
+    }
+    .right_icon {
+        
+        animation: pulse-blue 2s infinite;
+        background-color: #028fe3;
+        border-radius: 50%;
+        bottom: 50px;
+        box-shadow: 0 0 0 0 #028fe3;
+        display: flex;
+        height: 45px;
+        overflow: hidden;
+        position: fixed;
+        right: calc(50% - 600px);
+        transform: scale(1);
+        width: 45px;
+        z-index: 100;
+    }
+    .header_tophead {
+        width: 1520px;
+        height: 104px;
+        position: fixed;
+        margin-bottom: 20px;
+        box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+        background-color: #d70018;
+        z-index: 1000;
+        display: block;
+        top: 0;
+        left: 0;
+    }
+    .uudai_img {
+        height: 125px;
+    }
+    .list_products {
+        justify-content: space-between;
+    }
+    .product_brand {
+        color: #444;
+        font-family: sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .list_product_brand {
+        margin-left: 10px;
+        background-color: #f3f4f6;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        color: #444;
+        float: right;
+        font-size: 12px;
+        height: 20px;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-family: sans-serif;
+        line-height: 20px;
+    }
+    .categories-item {
+        height: 125px;
+        width: 118px;
+        margin-left: 10px;
+    }
+    .categories-content {
+        width: 1200px;
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+    .menu_me.cate {
+        background-color: rgb(242, 131, 118);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
+        display: block;
+        min-height: 125px;
+        overflow: hidden;
+        position: relative;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        width: 100%;
+    }
+    .flex_center {
+        justify-content: center;
+    }
+    .menu_bo.flex_wrap {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 1200px;
+    }
+    .product_out {
+        font-family: sans-serif;
+        font-size: 16px;
+        display: block;
+        line-height: 40px;
+        color: #444;
+        font-weight: 600;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    .sao {
+        height: 18px;
+    }
+    .bottom_div1 {
+        align-items: center;
+    }
+    .traitim {
+        height: 26px;
+        margin-left: 5px ;
+    }
+    .bottom_div {
+        align-items: center;
+        width: 204px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+    .yeuthich {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #777777;
+        margin-top: 5px;
+    }
+    .box_price1 {
+        color: #d70018;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    .notice_word {
+        display: block;
+        color: #444444;
+        font-family: sans-serif;
+        font-size: 12px;
+        width: 192.22px;
+        height: 36px;
+        margin-left: 5.9px;
+        margin-top: 5.9px;
+        overflow: hidden;
+    }
+    .notice {
+        width: 204px;
+        height: 47.6px;
+        background-color: #F3F4F6;
+        margin-left: 8px;
+        border: 1px solid #e5e7eb;
+        line-height: 1.5;
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .box_price2 {
+        color: #707070;
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-top: 2px;
+        font-weight: 600;
+    }
+    .box_price {
+        width: 204px;
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
+    .product_name {
+        color: #444444;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        padding-bottom: 30px;
+        margin-left: 10px;
+        width: 204px;
+    }
+    .percent {
+        background-color: #d70018;
+        border-radius: 15px;
+        height: 26px;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        padding-left: 15px;
+        margin-left: -12px;
+        margin-right: 5px;
+
+    }
+    .discount_tragop {
+        font-family: sans-serif;
+        font-size: 10px;
+        color: #0c53b7;
+        background-color:#fff ;
+        border-radius: 5px;
+        font-weight: 500;
+        padding: 2px 5px;
+        border: 1px solid #0c53b7;
+        height: 20px;
+        
+    }
+    .product_discount {
+        justify-content: space-between;
+    }
+    .anh_decor {
+        height: 44px;
+        margin-left: -7px;
+        margin-top: -5px;
+    }
+    .details {
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    .details1 {
+        margin-top: 4px;
+    }
+
+    .product_in4 {
+        background-color: #fff;
+        height: 420px;
+        width: 224px;
+        margin-right: 7px;
+        margin-left: 7px;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
+        border-radius: 15px;
+        margin-bottom: 50px;
+
+    }
+    .anh_product {
+        height: 160px;
+        margin-left: 32px;
+    }
+    .time {
+        color:#222222;
+        background:#FFF0BF;
+        border-radius: 50%;
+        color: #222;
+        font-size: 16px;
+        font-weight: 700;
+        height: 28px;
+        padding: 2px 5px;
+        text-align: center;
+        width: 24px;
+    }
+    .box_time {
+        margin-left: -40px;
+    }
+    .hai_cham {
+        line-height: 26px;
+        margin: 0 5px
+    }
+    .box_count {
+        justify-content: center;
+        align-items: center;
+    }
+    .time_gio {
+        margin-top: 3px;
+    }
+    .box_title p:active {
+        background-color: rgb(255, 240, 191);
+        color: rgb(34, 34, 34);
+    }
+    .box_title {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box_title p {
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(255, 255, 255);
+        color: rgb(34, 34, 34);
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.5;
+        border-radius: 7px;
+        padding: 4px 5px;
+        margin-right: 7px;
+        cursor: pointer;
+    }
+    .anh_title {
+        height: 60px;
+    }
+    .hot_sale {
+        background: linear-gradient(rgb(248, 62, 96), rgb(254, 80, 72)) 0% 0% / cover;
+        border-radius: 16px;
+        margin-top: 10px;
+        overflow: hidden;
+        padding: 2px;
+        width: 1180px;
+        display: block;
+        align-items: top;
+        margin-left: 130px;
+    }
+    .menu_discount {
+        margin-right: 250px;
+    }
+   .menu_me.menu_laptop .thanhphan_con-item {
+        margin-bottom: 20px;
+        margin-right: 120px;
+    }
+    .news_display{
+        margin-top: 344.3px;
+        margin-left: -205px;
+    }
+    .discount_display{
+        margin-top: 313px;
+        margin-left: -205px;
+    }
+    .old-item_display{
+        margin-top: 281.7px;
+        margin-left: -205px;
+    }
+    .exchange_display{
+        margin-top: 250.4px;
+        margin-left: -205px;
+    }
+    .tivi_display{
+        margin-top: 219.1px;
+        margin-left: -205px;
+    }
+    .pc_display{
+        margin-top: 187.8px;
+        margin-left: -205px;
+    }
+    .phukien_display{
+        margin-top: 156.5px;
+        margin-left: -205px;
+    }
+    .smarthome_display{
+        margin-top: 125.2px;
+        margin-left: -205px;
+    }
+    .watch_display {
+        margin-top: 93.9px;
+        margin-left: -205px;
+    }
+    .sound_display {
+        margin-top: 62.6px;
+        margin-left: -205px;
+    }
+    .menu-thanhphan1:hover .so4 {
+        color: #d70018;
+    }
+    .menu-thanhphan1:hover {
+        background-color:  hsla(0, 2%, 58%, 0.2);
+    }
+    .laptop_display{
+        margin-top: 31.3px;
+        margin-left: -205px;
+    }
+    .cabiet {
+        position: relative;
+        height: 28.5px;
+    }
+    .display_menu {
+        opacity: 0;
+        visibility: hidden
+    }
+    .texture:hover {
+        color: #d70018;
+    }
+    .display_menu:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.news_display:hover ~ .display_menu.news_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.discount_display:hover ~ .display_menu.discount_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.old-item_display:hover ~ .display_menu.old-item_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.exchange_display:hover ~ .display_menu.exchange_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.tivi_display:hover ~ .display_menu.tivi_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.pc_display:hover ~ .display_menu.pc_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.phukien_display:hover ~ .display_menu.phukien_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.smarthome_display:hover ~ .display_menu.smarthome_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.watch_display:hover ~ .display_menu.watch_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.sound_display:hover ~ .display_menu.sound_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.laptop_display:hover ~ .display_menu.laptop_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .cabiet.phone_display:hover ~ .display_menu.phone_menu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu_phan1{
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
+        border-radius: 5px;
+        max-height: 376px;
+        margin-right: 12px;
+        position: absolute;
+    }
+    .so1:hover{
+        color: #d70018;
+    }
+    .so2:hover{
+        color: #d70018;
+    }
+    .menu_thuoctinh {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 124px;
+    }
+    .thanhphan_con{
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 0 10px 10px 10px;
+        padding: 0 15px;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.1);
+        width: 845px;
+        position: absolute;
+        padding-top: 5px;
+        margin-top: -10px;
+        border-radius: 5px;
+    }
+    .texture {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 13px;
+        margin-left: -35px;
+        cursor: pointer;
+    }
+    .thanhphan_con-list {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .menu_bo {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu_me{
+        display: flex;
+        flex-direction: column;
+    }
+    .anh-right{
+        height: 115px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 12px;
+    }
+    .right-banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 355px;
+    }
+    .active:hover{
+        background-color:  hsla(0, 2%, 58%, 0.2);
+        color: black;
+    
+    }
+    .tren{
+        font-size: 12px;
+        
+    }
+    .duoi{
+        font-size: 11px;
+        
+    }
+    .con-item {
+        line-height: 20px;
+    }
+    .thanhphan_con-item{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px ;
+        line-height: 15px;
+    }
+    .chu{
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+    }
+    .slide-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .slider{
+        margin-left: 15px; 
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15);
+        margin-right: 15px;
+        overflow: hidden;
+        height: 100%;
+    }
+    .active{
+        margin-top: -4px;
+        align-items: center;
+        background: #fff;
+        border-radius: 0;
+        color: #343a40;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        height: 55px;
+        justify-content: center;
+        line-height: 20px;
+        padding: 11.5px 7px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .anh{
+        height: 300px;
+        
+    }
+    .hover-menu {
+        display: flex ;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        
+    }
+    
+    .banner3:hover {
+        background-color: hsl(0deg 0% 100% / 20%);
+        height: 37px;
+        border-radius: 10px;
+    }
+    .muiten-icon {
+        height: 15px;
+    }
+    .menu-thanhphan1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 195px;
+        height: 31.3px;
+        cursor: pointer;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .phones-icon {
+        height: 25px ;
+        width: 25px;
+    }
+    .thanhphan {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        font-weight:700;
+        color: #343a40;
+        font-size: 12px;
+        font-family: sans-serif;
+        min-height: 31.3px;
+        font-style: inherit;
+        width: 100%;
+        line-height: 1.5;
+    }
+    .menu-thanhphan {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #fff;
+        margin-right: 15px;
+        overflow: auto;
+        align-items: center;
+    }
+    .dangnhap-text {
+        font-family: Arial;
+        color: white;
+        font-size: 11px;
+        justify-items: center;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .dangnhap-icon {
+        height:30px ;
+        margin-bottom: -1px;
+        margin-top: -3px;
+        margin-left: -4px;
+    }
+    .dangnhap {
+        font-family: arial;
+        display: flex;
+        background-color: hsl(0deg 0% 100% / 20%);
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        height: 37px;
+        padding: 3px 5px;
+        position: relative;
+        flex-direction: column;
+        margin-left: 1px;
+       
+    }
+    .giohang-icon {
+        height: 25px;
+        margin-right: 3px;
+        margin-left: 7px;
+    }
+    .truck-icon {
+        height: 35px;
+    }
+    .vi-tri1 {
+        height: 30px;
+        margin-right: 2px;
+    }
+    .call {
+        line-height: 16px;
+    }
+    .phone-num {
+        line-height: 22px;
+    }
+    .phone-banner {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-family: arial;
+        font-size: 12px;
+        margin-right: 10px;
+        justify-content: center;
+        
+    }
+    .banner4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    .banner3 {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        height: 37px;
+        align-items: center;
+        justify-content: center;
+    }
+    .phone-icon {
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 3px;
+    }
+    .search-img {
+        height: 17px;
+    }
+    .banner2 {
+        display: flex;
+        align-items: center;
+    }
+    .search-but {
+        height: 32px;
+        background-color: white;
+        border: none;
+        border-radius: 9px;
+        
+        padding-right: 17px;
+    }
+    .text-box {
+        outline: none;
+        margin-right: 8px;
+        height: 30px;
+        border-radius: 9px;
+        border: none;
+        margin-left: -13px;
+        width: 280px;
+        font-size: 16px;
+        border: 0;
+        width: 100%;
+    }
+    .banner1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .down-icon {
+        height: 10px;
+        min-width: none;
+        margin-left: 20px;
+    }
+    .top-location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .Xem-gia {
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: bold;
+    }
+    .HCM {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .location-chu {
+        color: white;
+    }
+    .location {
+        font-family: arial;
+        display: flex;
+        background-color: hsl(0deg 0% 100% / 20%);
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        height: 37px;
+        padding: 3px 5px;
+        position: relative;
+        margin-top: 8px;
+        margin-right: 10px; 
+    }
+    .vi-tri{
+        height: 28px;
+    }
+    .danh-muc {
+        font-size: 13px;
+    }
+    .menu-icon {
+        height: 25px;
+    }
+    .menu {
+        font-family: arial;
+        display: flex;
+        background-color: hsl(0deg 0% 100% / 20%);
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        height: 42px;
+        padding: 3px 5px;
+        position: relative;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+    .logo-cell{
+        cursor: pointer;
+        height: 30px;
+        margin-top: 15px;
+        margin-right: 12px;
+    }
+    .header-banner{
+        background-color: #d70018;
+        height: 60px;
+        display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       margin-bottom: 12px;
+       
+    }
+    .banner{
+        display: block;
+        border-radius: 50px;
+        height: 30px;
+        width: 318.33px;
+        margin: 0px 37.5px;
+    }
+    .top-banner {
+        display: flex;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: -1;
+        padding: 5px;
+        justify-content: center;
+        max-height: 40px;
+        background-color: #e9efff;
+        align-items: center;
+        }
